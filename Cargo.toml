@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bincode = "1"
 byteorder = "1.4"
 crc = "3.0"
 serde = { version = "1.0", features = ["derive"] }
@@ -17,3 +18,7 @@ path = "src/lib.rs"
 [[bin]]
 name = "miniredis_mem"
 path = "src/miniredis_mem.rs"
+
+[[bin]]
+name = "miniredis_disk"
+path = "src/miniredis_disk.rs"
